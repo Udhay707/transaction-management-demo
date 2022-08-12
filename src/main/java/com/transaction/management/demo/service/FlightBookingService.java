@@ -25,6 +25,8 @@ public class FlightBookingService {
 
 
     public BookingAcknowledgement flightBookingService(BookingRequest request){
+    	
+    	String name = "Udhay";
         PassengerInfo info = request.getPassengerInfo();
         passengerInfoRepo.save(info);
         PaymentInfo paymentInfo = request.getPaymentInfo();
